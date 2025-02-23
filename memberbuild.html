@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Your Profile - Falconry Games</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Phudu:wght@300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./images/logo.png" alt="Falconry Games Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="lgs-locator.html">LGS Locator</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+                <div class="login-menu">
+                    <a href="#" class="login-trigger">Profile</a>
+                    <div class="login-options">
+                        <a href="profile.html">View Profile</a>
+                        <a href="logout.html">Logout</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="profile-container">
+        <h1>Build Your Profile</h1>
+        <form id="profileForm" class="profile-form">
+            <!-- Name -->
+            <div class="form-group">
+                <label for="name">First Name:</label>
+                <input type="text" id="firstname" name="firstname" placeholder="First Name" required />
+            </div>
+            <div class="form-group">
+                <label for="name">Last Name:</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Last Name" required />
+            </div>
+            <!-- Email -->
+            <div class="form-group">
+                <label for="name">Email:</label>
+                <input type="text" id="firstname" name="email" placeholder="Email Address" required />
+            </div>
+            <!-- City -->
+            <div class="form-group">
+                <label for="name">City</label>
+                <input type="text" id="city" name="city" placeholder="City" required />
+            </div>
+            <!-- State -->
+            <div class="form-group">
+                <label for="name">State</label>
+                <input type="text" id="state" name="city" placeholder="State" required />
+            </div>
+            <!-- Avatar Upload -->
+            <div class="form-group">
+                <label for="avatar">Avatar:</label>
+                <input type="file" id="avatar" name="avatar" accept=".jpg, .jpeg, .png" />
+            </div>
+
+            <!-- Game Interests -->
+            <div class="game-category-options">
+                <input type="checkbox" id="category1" name="gameCategory" value="TCGs">
+                <label for="category1">TCGs</label>
+            
+                <input type="checkbox" id="category2" name="gameCategory" value="Miniature">
+                <label for="category2">Miniature</label>
+            
+                <input type="checkbox" id="category3" name="gameCategory" value="Role Playing">
+                <label for="category3">Role Playing</label>
+            
+                <input type="checkbox" id="category4" name="gameCategory" value="Board Games">
+                <label for="category4">Board Games</label>
+            </div>
+            
+
+<!-- Additional game interests dropdowns (Initially hidden) -->
+<div class="form-group hidden" id="tcgsDropdown">
+    <label for="tcgs">Select TCGs:</label>
+    <select id="tcgs" name="tcgs" multiple>
+        <option value="mtg">Magic the Gathering</option>
+        <option value="pokemon">Pokemon</option>
+        <option value="yuGiOh">YuGiOh!</option>
+        <option value="lorcana">Lorcana</option>
+        <option value="starWarsUnlimited">Star Wars Unlimited</option>
+        <option value="digimon">Digimon</option>
+        <option value="onePunchMan">One Punch Man</option>
+        <option value="wweLegendsRoyalRumble">WWE Legends Royal Rumble</option>
+        <option value="divorcedDad">Divorced Dad</option>
+        <option value="fleshAndBlood">Flesh and Blood</option>
+        <option value="legendOfTheFiveRings">Legend of the Five Rings</option>
+        <option value="netrunner">Netrunner</option>
+    </select>
+</div>
+
+<div class="form-group hidden" id="miniatureDropdown">
+    <label for="miniature">Select Miniature Games:</label>
+    <select id="miniature" name="miniature" multiple>
+        <option value="warhammer40k">Warhammer 40K</option>
+        <option value="starWarsLegion">Star Wars Legion</option>
+        <option value="starWarsShatterpoint">Star Wars Shatterpoint</option>
+        <option value="battletech">Battletech</option>
+        <option value="fallout">Fallout</option>
+    </select>
+</div>
+
+<div class="form-group hidden" id="rolePlayingDropdown">
+    <label for="rolePlaying">Select Role Playing Games:</label>
+    <select id="rolePlaying" name="rolePlaying" multiple>
+        <option value="dnd">Dungeons & Dragons</option>
+    </select>
+</div>
+
+<div class="form-group hidden" id="boardGamesDropdown">
+    <label for="boardGames">Select Board Games:</label>
+    <select id="boardGames" name="boardGames" multiple>
+        <option value="catan">Catan</option>
+    </select>
+</div>
+
+            <!-- Submit Button -->
+            <button type="submit">Save Profile</button>
+        </form>
+
+        <!-- Preview Section -->
+        <section id="profilePreview" class="profile-preview hidden">
+            <h2>Preview Your Profile</h2>
+            <p><strong>First Name</strong> <span id="previewName"></span></p>
+            <p><strong>Game Interests:</strong> <span id="previewInterests"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content remains unchanged -->
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

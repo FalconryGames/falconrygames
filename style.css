@@ -1,0 +1,447 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #323232;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+header {
+    background-color: #212121;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 100px;
+    width: auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+
+  nav ul li, .login-menu {
+    margin-left: 20px;
+  }
+  
+  nav ul li a, .login-trigger {
+    text-decoration: none;
+    color: #14FFEC;
+    font-weight: normal;
+    font-family: "Phudu", serif;
+    transition: color 0.3s ease;
+  }
+  
+
+nav ul li a:hover, .login-trigger:hover {
+    color: #FF00FF;
+}
+
+.login-menu {
+    position: relative;
+  }
+  
+  .login-options {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #212121;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    display: none;
+  }
+  
+
+.login-options a {
+    color: #14FFEC;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+    font-family: "Phudu", serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.login-options a:hover {
+    background-color: #323232;
+    color: #FFFFFF;
+}
+
+.image-container {
+    position: relative;
+}
+
+.responsive-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    opacity: 0.25;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #14FFEC;
+    font-size: 24px;
+    font-family: "Phudu", serif;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav ul li, .login-menu {
+      margin: 10px 0;
+      width: 100%;
+    }
+  
+    .login-options {
+      position: static;
+      width: 100%;
+    }
+  }
+  
+
+    .login-menu:hover .login-options {
+        display: block;
+    }
+
+    footer {
+        background-color: #212121;
+        color: #14FFEC;
+        padding: 20px 0;
+        font-family: "Phudu", serif;
+    }
+    
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+    
+    .footer-social h3 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .footer-social ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .footer-social li {
+        margin: 0 10px;
+    }
+    
+    .footer-social a {
+        color: #14FFEC;
+        font-size: 24px;
+        transition: color 0.3s ease;
+    }
+    
+    .footer-social a:hover {
+        color: #FFFFFF;
+    }
+    
+    .footer-bottom {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    
+    .login-form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0;
+        background-color: #323232;
+    }
+    
+    .login-form {
+        background-color: #212121;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        margin: 2rem 0;
+    }
+    
+    .login-form h2 {
+        color: #14FFEC;
+        text-align: center;
+        margin-bottom: 1.5rem;
+        font-family: "Phudu", serif;
+    }
+    
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    
+    .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: #14FFEC;
+        font-family: "Phudu", serif;
+    }
+    
+    .form-group input {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #14FFEC;
+        border-radius: 4px;
+        background-color: #323232;
+        color: #FFFFFF;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .form-group input:focus {
+        outline: none;
+        border-color: #FF00FF; /* Changed to match your hover color */
+        box-shadow: 0 0 5px rgba(255, 0, 255, 0.5); /* Subtle glow effect */
+    }
+    
+    .login-form button {
+        width: 100%;
+        padding: 0.75rem;
+        background-color: #14FFEC;
+        color: #212121;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: "Phudu", serif;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+    
+    .login-form button:hover {
+        background-color: #FFFFFF;
+    }
+    
+    .login-message {
+        margin-top: 1rem;
+        text-align: center;
+        color: #14FFEC;
+        font-family: "Phudu", serif;
+    }
+    
+    profile-container {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background-color: #212121;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(20, 255, 236, 0.2);
+    }
+    
+    .profile-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    
+    .profile-avatar {
+        width: 150px;
+        height: 150px;
+        margin-right: 2rem;
+    }
+    
+    .profile-name {
+        font-family: "Phudu", serif;
+        color: #14FFEC;
+        font-size: 2.5rem;
+    }
+    
+    .profile-content {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 2rem;
+    }
+    
+    .profile-stats, .profile-achievements {
+        background-color: #323232;
+        padding: 1.5rem;
+        border-radius: 8px;
+    }
+    
+    .profile-stats h2, .profile-achievements h2 {
+        font-family: "Phudu", serif;
+        color: #14FFEC;
+        margin-bottom: 1rem;
+    }
+    
+    .stat-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.5rem;
+    }
+    
+    .stat-label, .stat-value {
+        color: #FFFFFF;
+        font-family: Arial, sans-serif;
+    }
+    
+    .achievement-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 1rem;
+    }
+    
+    .achievement-item {
+        background-color: #212121;
+        border-radius: 8px;
+        padding: 1rem;
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+    
+    .achievement-item:hover {
+        transform: scale(1.05);
+    }
+    
+    .achievement-icon {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .achievement-name {
+        color: #14FFEC;
+        font-size: 0.8rem;
+        font-family: "Phudu", serif;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .profile-content {
+            grid-template-columns: 1fr;
+        }
+        
+        .profile-header {
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        .profile-avatar {
+            margin-right: 0;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .profile-form {
+        max-width: 600px;
+        margin: 2rem auto;
+        padding: 1.5rem;
+        background-color: #212121;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .profile-form .form-group {
+        margin-bottom: 1rem;
+    }
+    
+    .profile-form label {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: #14FFEC;
+        font-family: "Phudu", serif;
+    }
+    
+    .profile-form input,
+    .profile-form textarea,
+    .profile-form select {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #14FFEC;
+        border-radius: 4px;
+        background-color: #323232;
+        color: #FFFFFF;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .profile-form input:focus,
+    .profile-form textarea:focus,
+    .profile-form select:focus {
+        outline: none;
+        border-color: #FF00FF;
+        box-shadow: 0 0 5px rgba(255, 0, 255, 0.5);
+    }
+    
+    .profile-form button {
+        width: 100%;
+        padding: 0.75rem;
+        background-color: #14FFEC;
+        color: #212121;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: "Phudu", serif;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+    
+    .profile-form button:hover {
+        background-color: #FFFFFF;
+    }
+    
+    .dropdown-container {
+        margin-bottom: 1rem;
+    }
+    
+    .dropdown, .sub-dropdown select {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #14FFEC;
+        border-radius: 4px;
+        background-color: #323232;
+        color: #FFFFFF;
+        margin-bottom: 0.5rem;
+        font-family: Arial, sans-serif;
+    }
+    
+    .hidden {
+        display: none;
+    }
+    
+    .sub-dropdown select {
+        height: 150px;
+    }
+    
+    .profile-preview {
+        max-width: 600px;
+        margin: 2rem auto;
+        padding: 1.5rem;
+        background-color: #323232;
+        border-radius: 8px;
+    }
+    

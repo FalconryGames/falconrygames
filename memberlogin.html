@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Login - Falconry Games</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Phudu:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./images/logo.png" alt="Falconry Games Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="lgs-locator.html">LGS Locator</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+                <div class="login-menu">
+                    <a href="#" class="login-trigger">Login</a>
+                    <div class="login-options">
+                        <a href="memberlogin.html">Member Login</a>
+                        <a href="lgs-login.html">LGS Login</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="login-form-container">
+            <form id="loginForm" class="login-form">
+                <h2>Member Login</h2>
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+                <p id="loginMessage" class="login-message"></p>
+            </form>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a></li>
+                    <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Falconry Games. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
