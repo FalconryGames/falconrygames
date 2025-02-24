@@ -445,3 +445,146 @@ nav ul li a:hover, .login-trigger:hover {
         border-radius: 8px;
     }
     
+    .avatar-selection {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .avatar-selection label {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        border: 2px solid transparent;
+        border-radius: 50%;
+        overflow: hidden;
+        cursor: pointer;
+        transition: border-color 0.3s ease;
+    }
+    
+    .avatar-selection label:hover {
+        border-color: #14FFEC;
+    }
+    
+    .avatar-selection img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .avatar-selection input[type="radio"] {
+        display: none;
+    }
+    
+    .avatar-selection input[type="radio"]:checked + img {
+        border: 2px solid #14FFEC;
+    }
+
+    .tcgs-selection {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .tcgs-selection label {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        border: 2px solid transparent;
+        border-radius: 50%;
+        overflow: hidden;
+        cursor: pointer;
+        transition: border-color 0.3s ease;
+    }
+    
+    .tcgs-selection label:hover {
+        border-color: #14FFEC;
+    }
+    
+    .tcgs-selection img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .tcgs-selection input[type="radio"] {
+        display: none;
+    }
+    
+    .tcs-selection input[type="radio"]:checked + img {
+        border: 2px solid #14FFEC;
+    }
+    
+    /* Category Selection */
+.category-selection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.category-selection label {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border: 2px solid transparent;
+    border-radius: 10px; /* Or adjust for desired shape */
+    overflow: hidden;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.category-selection label:hover {
+    border-color: #14FFEC;
+}
+
+.category-selection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.category-selection input[type="checkbox"] {
+    display: none;
+}
+
+.category-selection input[type="checkbox"]:checked + img {
+    border: 2px solid #14FFEC;
+}
+
+/* Sub-Category Selection */
+.sub-category-selection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.sub-category-selection label {
+    display: inline-block;
+    width: 60px; /* Adjust for smaller size if desired */
+    height: 60px; /* Adjust for smaller size if desired */
+    border: 2px solid transparent;
+    border-radius: 10px; /* Or adjust for desired shape */
+    overflow: hidden;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.sub-category-selection label:hover {
+    border-color: #FF00FF; /*  a different hover color for distinction */
+}
+
+.sub-category-selection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sub-category-selection input[type="checkbox"] {
+    display: none;
+}
+
+.sub-category-selection input[type="checkbox"]:checked + img {
+    border: 2px solid #FF00FF; /* and a different color when checked */
+}

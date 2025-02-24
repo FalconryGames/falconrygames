@@ -51,34 +51,112 @@
             </div>
             <!-- City -->
             <div class="form-group">
-                <label for="name">City</label>
+                <label for="name">City:</label>
                 <input type="text" id="city" name="city" placeholder="City" required />
             </div>
             <!-- State -->
             <div class="form-group">
-                <label for="name">State</label>
-                <input type="text" id="state" name="city" placeholder="State" required />
+                <label for="state">State:</label>
+                <select id="state" name="state" required>
+                    <option value="">Select a State</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District Of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                </select>
             </div>
-            <!-- Avatar Upload -->
+            
+            <!-- Avatar Selection -->
             <div class="form-group">
-                <label for="avatar">Avatar:</label>
-                <input type="file" id="avatar" name="avatar" accept=".jpg, .jpeg, .png" />
+                <label for="avatar">Select Avatar:</label>
+                <div class="avatar-selection">
+                    <label>
+                        <input type="radio" name="animehero" value="animehero.jpg" required>
+                        <img src="./images/avatarimages/images/animehero.jpg" alt="Anime Hero">
+                    </label>
+                    <label>
+                        <input type="radio" name="dragon" value="dragon.jpg" required>
+                        <img src="./images/avatarimages/images/dragon.jpg" alt="Dragon">
+                    </label>
+                    <label>
+                        <input type="radio" name="elfgirl" value="elfgirl.jpg" required>
+                        <img src="./images/avatarimages/images/elfgirl.jpg" alt="Elf Girl">
+                    </label>
+                    <label>
+                        <input type="radio" name="falconwarrior" value="avatar3.jpg" required>
+                        <img src="./images/avatarimages/images/falconwarrior.jpg" alt="Falcon Warrior">
+                    </label>                   
+                </div>
             </div>
 
-            <!-- Game Interests -->
-            <div class="game-category-options">
-                <input type="checkbox" id="category1" name="gameCategory" value="TCGs">
-                <label for="category1">TCGs</label>
-            
-                <input type="checkbox" id="category2" name="gameCategory" value="Miniature">
-                <label for="category2">Miniature</label>
-            
-                <input type="checkbox" id="category3" name="gameCategory" value="Role Playing">
-                <label for="category3">Role Playing</label>
-            
-                <input type="checkbox" id="category4" name="gameCategory" value="Board Games">
-                <label for="category4">Board Games</label>
-            </div>
+            <!-- Game Category Interests -->
+            <div class="form-group">
+                <label for="interests">Game Interests:</label>
+                <div class="category-selection">
+                    <label>
+                        <input type="checkbox" id="tcgsCheckbox" name="gameCategory" value="TCGs">
+                        <img src="./images/tcgs.png" alt="Hand with Fanned Out Trading Cards">
+                    </label>
+                    <label>
+                        <input type="checkbox" id="miniatureCheckbox" name="gameCategory" value="Miniature">
+                        <img src="./images/miniatures.jpg" alt="Titus Warhammer Miniature">
+                    </label>
+                    <label>
+                        <input type="checkbox" id="rolePlayingCheckbox" name="gameCategory" value="Role Playing">
+                        <img src="./images/roleplaying.png" alt="Role Playing">
+                    </label>
+                    <label>
+                        <input type="checkbox" id="boardGamesCheckbox" name="gameCategory" value="Board Games">
+                        <img src="./images/boardgames.png" alt="Board Games">
+                    </label>
+                </div>
             
 
 <!-- Additional game interests dropdowns (Initially hidden) -->
@@ -92,8 +170,7 @@
         <option value="starWarsUnlimited">Star Wars Unlimited</option>
         <option value="digimon">Digimon</option>
         <option value="onePunchMan">One Punch Man</option>
-        <option value="wweLegendsRoyalRumble">WWE Legends Royal Rumble</option>
-        <option value="divorcedDad">Divorced Dad</option>
+        <option value="divorcedDads">Divorced Dads</option>
         <option value="fleshAndBlood">Flesh and Blood</option>
         <option value="legendOfTheFiveRings">Legend of the Five Rings</option>
         <option value="netrunner">Netrunner</option>
