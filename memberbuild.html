@@ -136,33 +136,31 @@
                 </div>
             </div>
 
-            <!-- Game Category Interests -->
-            <div class="form-group">
-                <label for="interests">Game Interests:</label>
-                <div class="category-selection">
-                    <label>
-                        <input type="checkbox" id="tcgsCheckbox" name="gameCategory" value="TCGs">
-                        <img src="./images/tcgs.png" alt="Hand with Fanned Out Trading Cards">
-                    </label>
-                    <label>
-                        <input type="checkbox" id="miniatureCheckbox" name="gameCategory" value="Miniature">
-                        <img src="./images/miniatures.jpg" alt="Titus Warhammer Miniature">
-                    </label>
-                    <label>
-                        <input type="checkbox" id="rolePlayingCheckbox" name="gameCategory" value="Role Playing">
-                        <img src="./images/roleplaying.png" alt="Role Playing">
-                    </label>
-                    <label>
-                        <input type="checkbox" id="boardGamesCheckbox" name="gameCategory" value="Board Games">
-                        <img src="./images/boardgames.png" alt="Board Games">
-                    </label>
-                </div>
-            
-
-<!-- Additional game interests dropdowns (Initially hidden) -->
-<div class="form-group hidden" id="tcgsDropdown">
-    <label for="tcgs">Select TCGs:</label>
-    <select id="tcgs" name="tcgs" multiple>
+            <!--Game Category Interests-->
+<div class="form-group">
+    <label for="interests">Game Interests:</label>
+    <div class="category-selection">
+      <label>
+        <input type="checkbox" id="tcgsCheckbox" name="gameCategory" value="TCGs" />
+        <img src="./images/tcgs.png" alt="Hand with Fanned Out Trading Cards" />
+      </label>
+      <label>
+        <input type="checkbox" id="miniatureCheckbox" name="gameCategory" value="Miniature" />
+        <img src="./images/miniatures.jpg" alt="Titus Warhammer Miniature" />
+      </label>
+      <label>
+        <input type="checkbox" id="rolePlayingCheckbox" name="gameCategory" value="Role Playing" />
+        <img src="./images/roleplaying.png" alt="Role Playing" />
+      </label>
+      <label>
+        <input type="checkbox" id="boardGamesCheckbox" name="gameCategory" value="Board Games" />
+        <img src="./images/boardgames.png" alt="Board Games" />
+      </label>
+    </div>
+    <!--Additional game interests dropdowns(Initially hidden)-->
+    <div class="form-group hidden" id="tcgsDropdown">
+      <label for="tcgs">Select TCGs:</label>
+      <select id="tcgs" name="tcgs" multiple>
         <option value="mtg">Magic the Gathering</option>
         <option value="pokemon">Pokemon</option>
         <option value="yuGiOh">YuGiOh!</option>
@@ -174,33 +172,35 @@
         <option value="fleshAndBlood">Flesh and Blood</option>
         <option value="legendOfTheFiveRings">Legend of the Five Rings</option>
         <option value="netrunner">Netrunner</option>
-    </select>
-</div>
-
-<div class="form-group hidden" id="miniatureDropdown">
-    <label for="miniature">Select Miniature Games:</label>
-    <select id="miniature" name="miniature" multiple>
+      </select>
+    </div>
+  
+    <div class="form-group hidden" id="miniatureDropdown">
+      <label for="miniature">Select Miniature Games:</label>
+      <select id="miniature" name="miniature" multiple>
         <option value="warhammer40k">Warhammer 40K</option>
         <option value="starWarsLegion">Star Wars Legion</option>
         <option value="starWarsShatterpoint">Star Wars Shatterpoint</option>
         <option value="battletech">Battletech</option>
         <option value="fallout">Fallout</option>
-    </select>
-</div>
-
-<div class="form-group hidden" id="rolePlayingDropdown">
-    <label for="rolePlaying">Select Role Playing Games:</label>
-    <select id="rolePlaying" name="rolePlaying" multiple>
+      </select>
+    </div>
+  
+    <div class="form-group hidden" id="rolePlayingDropdown">
+      <label for="rolePlaying">Select Role Playing Games:</label>
+      <select id="rolePlaying" name="rolePlaying" multiple>
         <option value="dnd">Dungeons & Dragons</option>
-    </select>
-</div>
-
-<div class="form-group hidden" id="boardGamesDropdown">
-    <label for="boardGames">Select Board Games:</label>
-    <select id="boardGames" name="boardGames" multiple>
+      </select>
+    </div>
+  
+    <div class="form-group hidden" id="boardGamesDropdown">
+      <label for="boardGames">Select Board Games:</label>
+      <select id="boardGames" name="boardGames" multiple>
         <option value="catan">Catan</option>
-    </select>
-</div>
+      </select>
+    </div>
+  </div>
+  
 
             <!-- Submit Button -->
             <button type="submit">Save Profile</button>

@@ -44,7 +44,7 @@ nav ul {
   
 
   nav ul li, .login-menu {
-    margin-left: 20px;
+    margin-left: 100px;
   }
   
   nav ul li a, .login-trigger {
@@ -188,7 +188,7 @@ nav ul li a:hover, .login-trigger:hover {
         padding: 2rem 0;
         background-color: #323232;
     }
-    
+
     .login-form {
         background-color: #212121;
         padding: 2rem;
@@ -263,6 +263,11 @@ nav ul li a:hover, .login-trigger:hover {
         background-color: #212121;
         border-radius: 10px;
         box-shadow: 0 0 20px rgba(20, 255, 236, 0.2);
+    }
+
+    .profile-container > h1 {
+        color: #14FFEC;
+        text-align: center;
     }
     
     .profile-header {
@@ -348,7 +353,7 @@ nav ul li a:hover, .login-trigger:hover {
         
         .profile-header {
             flex-direction: column;
-            text-align: center;
+            text-align: center;           
         }
         
         .profile-avatar {
